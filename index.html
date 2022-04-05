@@ -15,19 +15,24 @@
     <main>
         <h1><i class="fa-solid fa-feather-pointed"></i> un combat tout mignon ! <i class="fa-solid fa-scale-unbalanced-flip"></i></h1>
         
-        <section id="battle-ground">
-            <img src="images/monster.png" alt="image du monstre" class="fighters">
-            <img src="images/hero.png" alt="image du héros" class="fighters">
+        <section id="battle-ground"> <!-- combat -->
+            <img src="images/monster.png" alt="image du monstre" class="fighters" id="monster"> <!-- dragon -->
+            <img src="images/hero.png" alt="image du héros" class="fighters" id="hero"> <!-- perso -->
         </section>
 
-        <section id="log">
+        <section id="log"> <!-- info -->
             <p>informations du combat</p>
         </section>
 
-        <section id="control">
-            <button>attaquer</button>
-            <button>défendre</button>
-            <button>sort</button>
+        <section id="control"> <!-- commande -->
+            <button id="attack">attaquer</button>
+            <button id="defense">défendre</button>
+            <button id="spell">sort</button>
+        </section>
+
+        <section id="display">
+            <p id="monster"></p>
+            <p id="hero"></p>
         </section>
     </main>
 
@@ -39,5 +44,10 @@
         </p>
         <p>Coded with love <i class="fa-solid fa-heart"></i><br>  by Ony Lalaina Valérie</p>
     </footer>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/class/perso.class.js"></script>
+    <script src="js/class/program.class.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
