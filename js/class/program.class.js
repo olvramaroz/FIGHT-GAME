@@ -54,7 +54,7 @@ class Program {
         e.preventDefault();
 
         // clear le log d'affichage pour pouvoir afficher les autres paramètres d'affichage
-        $('#info p').html(``)
+        $('#info p').empty()
 
         // le joueur attaque en premier
         this.player.attack(this.dragon);
@@ -70,7 +70,7 @@ class Program {
         e.preventDefault()
 
         // clear le log d'affichage pour pouvoir afficher les autres paramètres d'affichage
-        $('#info p').html(``)
+        $('#info p').empty()
 
         // le héros se défend à l'attaque du monstre
         this.player.defense()
@@ -86,7 +86,7 @@ class Program {
         e.preventDefault();
 
         // clear le log d'affichage pour pouvoir afficher les autres paramètres d'affichage
-        $('#info p').html(``)
+        $('#info p').empty()
 
         // si le joueur a des points de sort
         if (this.player.spellPoint > 0) {

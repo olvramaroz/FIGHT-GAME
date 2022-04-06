@@ -46,7 +46,7 @@ class Perso {
 
     defense() {
         // on doit calculer un ratio de défense qu'on va distribuer entre les joueurs
-	    let ratio =  Math.round(this.defense * Math.random());
+	    let ratio =  Math.round(this.defensePoint * Math.random());
 
         // message pour informer qu'un joueur a augmenté ses points de défense
 		$("#info p").append(`${this.name} a augmenté sa défense de ${ratio} points.<br>`);
