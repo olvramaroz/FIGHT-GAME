@@ -10,30 +10,34 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
     <main>
         <h1><i class="fa-solid fa-feather-pointed"></i> un combat tout mignon ! <i class="fa-solid fa-scale-unbalanced-flip"></i></h1>
         
-        <section id="battle-ground"> <!-- combat -->
-            <img src="images/monster.png" alt="image du monstre" class="fighters" id="monster"> <!-- dragon -->
-            <img src="images/hero.png" alt="image du héros" class="fighters" id="hero"> <!-- perso -->
+        <section id="battle-ground">
+            <img src="images/monster.png" alt="image du monstre" class="fighters" id="dragon">
+            <img src="images/hero.png" alt="image du héros" class="fighters" id="perso">
         </section>
 
-        <section id="log"> <!-- info -->
+        <section id="combat">
+            <p id="perso"></p>
+            <p id="dragon"></p>
+        </section>
+
+        <section id="info">
             <p>informations du combat</p>
         </section>
 
-        <section id="control"> <!-- commande -->
-            <button id="attack">attaquer</button>
-            <button id="defense">défendre</button>
-            <button id="spell">sort</button>
+        <section id="control">
+            <button id="attaquer">attaquer</button>
+            <button id="defendre">défendre</button>
+            <button id="sort">sort</button>
         </section>
 
-        <section id="display">
-            <p id="monster"></p>
-            <p id="hero"></p>
-        </section>
     </main>
 
     <footer>
@@ -45,9 +49,7 @@
         <p>Coded with love <i class="fa-solid fa-heart"></i><br>  by Ony Lalaina Valérie</p>
     </footer>
 
-    <script src="js/utilities.js"></script>
-    <script src="js/class/perso.class.js"></script>
-    <script src="js/class/program.class.js"></script>
-    <script src="js/main.js"></script>
+
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>

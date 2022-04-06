@@ -6,7 +6,7 @@
 
 */
 
-import Program from ('./class/program.class');
+import Program from './class/program.class.js';
 
 const launch = new Program();
-console.log(launch);
+console.log('launch -->', launch);
